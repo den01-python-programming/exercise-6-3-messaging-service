@@ -6,6 +6,6 @@ Implement the `MessagingService` class. The class must have a parameterless cons
 
 - `def add(self, message)` - adds a message passed as a parameter to the messaging service as long as the message content is at most 280 characters long.
 
-- `def getMessages()` - returns the messages added to the messaging service.
+- `def get_messages()` - returns the messages added to the messaging service.
 
 Tip! You can find out the length of the string using the `len()` method associated with the string.

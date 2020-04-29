@@ -1,6 +1,11 @@
 import pytest
-import src.exercise
+from src.messaging_service import MessagingService
+from src.message import Message
 
 def test_exercise():
-    #implement tests here
-    assert 0 == 0
+    message = Message("Grace","Hello there!")
+    service = MessagingService()
+
+    service.add(message)
+
+    assert service.get_messages() == ["Grace: Hello there!"]
